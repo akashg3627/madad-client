@@ -3,7 +3,7 @@ import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 import emailjs from "emailjs-com";
 import "./Contactus.css";
 import { lp2 } from "../../Images";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 export default function ContactUs() {
 	// const isAuth = useSelector(state=>state.users.isAuth)

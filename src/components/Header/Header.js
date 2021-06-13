@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { NavItem, Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, Button, ButtonGroup } from "reactstrap";
 import { NavLink, useHistory } from "react-router-dom";
@@ -23,28 +23,28 @@ function Header() {
 		setNav(!isNavOpen);
 	};
 
-	const [showNav, setShowNav] = useState(true);
-	var scrollPosition = 0;
+	// const [showNav, setShowNav] = useState(true);
+	// var scrollPosition = 0;
 
-	const handleScroll = () => {
-		const position = window.pageYOffset;
-		console.log("yo", position);
-		console.log(scrollPosition);
-		if (position > scrollPosition) {
-			setShowNav(false);
-			setNav(false);
-		} else {
-			setShowNav(true);
-		}
-		scrollPosition = position;
-	};
+	// const handleScroll = () => {
+	// 	const position = window.pageYOffset;
+	// 	console.log("yo", position);
+	// 	console.log(scrollPosition);
+	// 	if (position > scrollPosition) {
+	// 		setShowNav(false);
+	// 		setNav(false);
+	// 	} else {
+	// 		setShowNav(true);
+	// 	}
+	// 	scrollPosition = position;
+	// };
 
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll, { passive: true });
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
+	// useEffect(() => {
+	// 	window.addEventListener("scroll", handleScroll, { passive: true });
+	// 	return () => {
+	// 		window.removeEventListener("scroll", handleScroll);
+	// 	};
+	// }, []);
 
 	// const [isDropdownOpen,setDropdown] = useState(false);
 	// const toggleDropdown = ()=>{
@@ -74,7 +74,7 @@ function Header() {
 	//    }
 
 	return (
-		<div className={showNav ? "myNavbar showNav" : "myNavbar hideNav"}>
+		<div className="myNavbar showNav" >
 			<Navbar light className="header-clr navbar-expand-custom">
 				<div className="container-fluid">
 					<NavbarBrand className="mr-auto" href="/home">

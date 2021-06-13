@@ -36,7 +36,7 @@ function Provider({ serve }) {
 			setSearch(temp2);
 		}
 		handleSearch();
-	}, [isLoading]);
+	}, [isLoading, donor, selectedCity, selectedFacility]);
 	function handleSearch() {
 		// console.log(selectedFacility);
 		// console.log(selectedCity);

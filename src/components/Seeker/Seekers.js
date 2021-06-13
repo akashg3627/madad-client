@@ -36,7 +36,7 @@ function Seeker({ serve }) {
 			setSearch(temp2);
 		}
 		handleSearch();
-	}, [isLoading]);
+	}, [isLoading, selectedFacility, selectedCity, seeker]);
 
 	function handleSearch() {
 		// console.log(selectedFacility);

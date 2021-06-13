@@ -43,9 +43,9 @@ function Profile(props) {
         return (
             <Card>
                 <CardBody className="row align-items-center justify-content-center">
-                    <CardText className="col-10 col-md-4"><Input disabled={!edit} placeholder={user.name} onChange={(e) => setName(e.target.value)} /></CardText>
-                    <CardText className="col-10 col-md-3"><Input disabled placeholder={user.mobileNumber} onChange={(e) => setMob(e.target.value)} /></CardText>
-                    <CardText className="col-10 col-md-4"><Input disabled={!edit} placeholder={user.email ? user.email : "Add Email"} onChange={(e) => setEmail(e.target.value)} /></CardText>
+                    <CardText className="col-10 col-md-4"><Input value={name} disabled={!edit} placeholder={user.name} onChange={(e) => setName(e.target.value)} /></CardText>
+                    <CardText className="col-10 col-md-3"><Input value={mobileNumber} disabled placeholder={user.mobileNumber} onChange={(e) => setMob(e.target.value)} /></CardText>
+                    <CardText className="col-10 col-md-4"><Input value={email} disabled={!edit} placeholder={user.email ? user.email : "Add Email"} onChange={(e) => setEmail(e.target.value)} /></CardText>
                     <CardText className="col-3 col-md-1"><Button disabled color="warning" onClick={() => setEdit(!edit)}><BiEditAlt /></Button></CardText>
                 </CardBody>
             </Card>

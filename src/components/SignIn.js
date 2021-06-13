@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { BiLogInCircle } from 'react-icons/bi';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 // import { useHistory } from 'react-router';
 import { Alert, Button, Form, FormGroup, Input, Label, Modal, ModalBody } from 'reactstrap';
 import { loginUser } from '../redux/ActionCreators';
