@@ -1,0 +1,229 @@
+.HomeS1 {
+	padding: 2rem 5rem 3rem 5rem;
+}
+
+.carouselImg {
+	border-radius: 2.5rem;
+	width: 97%;
+	box-shadow: 0.2rem 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+	margin: 1rem auto;
+	margin-top: 0.2rem;
+	display: block;
+	justify-self: center;
+}
+
+.HomeBg {
+	width: 100%;
+	background-image: url("../../Images/Background.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 3rem;
+}
+
+#HomeS2 {
+	padding: 0 5rem 3rem 5rem;
+}
+
+#WAYLF {
+	width: 100%;
+	padding: 3rem 0rem;
+	font-size: 2.5rem;
+	color: #001561;
+	font-weight: 600;
+}
+
+#EachCard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.serviceCard {
+	background-color: #fff;
+	border-radius: 2.5rem;
+	margin: auto;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 5px 1px rgba(0, 102, 255, 0.15);
+	width: 12vw;
+	height: 12vw;
+	margin-bottom: 1.5rem;
+	margin: 1rem 0rem;
+	cursor: pointer;
+}
+
+.serviceText {
+	color: rgb(18, 6, 248);
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.serviceCard:hover {
+	box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.25), 0px 0.5rem 1rem rgba(0, 102, 255, 0.432);
+}
+
+.serviceImg {
+	width: 6vw;
+	height: 6vw;
+	margin: 1rem;
+}
+
+.carouselImg {
+	border-radius: 2.5rem;
+	width: 97%;
+	box-shadow: 0.2rem 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+	margin: 1rem auto;
+	margin-top: 0.2rem;
+	display: block;
+	justify-self: center;
+}
+
+#HomeM .modal-content {
+	border-radius: 2rem;
+	padding: 2rem;
+	/* padding-bottom: 4.5rem; */
+}
+
+#HomeS3 {
+	padding: 4rem 0;
+}
+
+.regImg {
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+
+.regCard {
+	padding: 1rem 0.2rem !important;
+	text-align: center;
+}
+
+.regCH {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.regHead {
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-align: center;
+	padding: 3rem 0 2rem 0;
+	color: #7722df;
+}
+
+.regBtn {
+	margin-top: 1rem;
+	padding: 1rem 6rem;
+	background-color: #0035f4;
+	border-radius: 1rem;
+	font-size: 1.2rem;
+	color: #fff;
+	font-weight: 700;
+	box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.regBtn {
+	box-shadow: 0rem 0rem 1.3rem rgba(0, 0, 0, 0.25);
+}
+
+.donateCard {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../Images/poorPeople.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	width: 100vw;
+}
+
+.btn-donate {
+	margin: 5px;
+}
+
+.donateCard:hover {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../Images/poorPeople.webp");
+	transition: 0.3s;
+}
+
+@media (max-width: 800px) {
+	.serviceCard {
+		border-radius: 1.5rem;
+		width: 27vw;
+		height: 27vw;
+		margin-bottom: 1rem;
+		margin: 0.5rem 0rem;
+	}
+	.serviceCard:hover {
+		box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.25), 0px 0.5rem 1rem rgba(0, 102, 255, 0.432);
+	}
+	.carouselImg {
+		border-radius: 1.5rem;
+		box-shadow: 0.08rem 0.1rem 0.08rem 0.1rem rgba(0, 0, 0, 0.2);
+		margin: 0.3rem auto;
+	}
+	.HomeS1 {
+		padding: 1rem 0.8rem;
+	}
+	#HomeS2 {
+		padding: 2rem 1rem 2rem 1rem;
+	}
+	#WAYLF {
+		font-size: 1.2rem;
+		padding: 0.5rem 0rem;
+	}
+	.serviceImg {
+		width: 15vw;
+		height: 15vw;
+		margin: 0.5rem;
+	}
+	.serviceText {
+		font-size: 0.7rem;
+		font-weight: 500;
+	}
+
+	#HomeM .modal-content {
+		border-radius: 1.5rem;
+		padding: 0.2rem;
+	}
+
+	#HomeS3 {
+		padding: 2rem 0;
+	}
+	.regImg {
+		width: 95%;
+		display: block;
+		margin: auto;
+	}
+	.regCard {
+		padding: 0.5rem 0.1rem !important;
+		text-align: center;
+		font-size: 0.7rem;
+	}
+	.regCH {
+		font-size: 1rem;
+		font-weight: 700;
+	}
+	.regHead {
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-align: center;
+		padding: 1rem;
+	}
+	.regBtn {
+		margin-top: 0.5rem;
+		padding: 0.5rem 3rem;
+		background-color: #0035f4;
+		border-radius: 0.5rem;
+		font-size: 0.8rem;
+		color: #fff;
+		font-weight: 700;
+		box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.25);
+	}
+	.regBtn {
+		box-shadow: 0rem 0rem 1.2rem rgba(0, 0, 0, 0.25);
+	}
+	.carouselImg {
+		border-radius: 1.5rem;
+		box-shadow: 0.08rem 0.1rem 0.08rem 0.1rem rgba(0, 0, 0, 0.2);
+		margin: 0.3rem auto;
+	}
+}

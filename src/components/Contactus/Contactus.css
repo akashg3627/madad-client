@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+.contactus form {
+	width: 35%;
+	background-color: #fff;
+	border: 5px;
+	min-height: 70vh;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 5px 0 #7722df;
+}
+
+.up {
+	position: relative;
+	animation-name: goUp;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+}
+
+@keyframes goUp {
+	0% {
+		top: 40px;
+		left: 0;
+		transform: scale(1.05);
+	}
+	50% {
+		top: 20px;
+		left: -2px;
+		transform: scale(1);
+	}
+	100% {
+		top: 0px;
+		left: -4px;
+		transform: scale(0.95);
+	}
+}
+
+.down {
+	position: relative;
+	animation-name: goDown;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+}
+
+@keyframes goDown {
+	0% {
+		top: 0;
+		transform: scale(0.95);
+		left: -4px;
+	}
+	50% {
+		top: 20px;
+		transform: scale(1);
+		left: -2px;
+	}
+	100% {
+		top: 40px;
+		transform: scale(1.05);
+		left: 0;
+	}
+}
+
+.contactus input,
+.contactus textarea {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid gray;
+	border-radius: 0;
+	padding: 2px;
+}
+
+.contactus textarea:focus,
+.contactus input:focus {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid gray;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+	.contactus img {
+		display: none;
+	}
+	.contactus form {
+		width: initial;
+	}
+}

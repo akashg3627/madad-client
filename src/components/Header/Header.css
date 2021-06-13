@@ -1,0 +1,58 @@
+.myNavbar {
+	position: sticky;
+	z-index: 10;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+}
+
+.showNav {
+	animation-name: showNavbar;
+}
+
+@keyframes showNavbar {
+	0% {
+		top: -120px;
+	}
+	100% {
+		top: 0px;
+	}
+}
+
+.hideNav {
+	animation-name: hideNavbar;
+}
+
+@keyframes hideNavbar {
+	0% {
+		top: 0px;
+	}
+	100% {
+		top: -120px;
+	}
+}
+
+@media (min-width: 1122px) {
+	.navbar-collapse {
+		flex-basis: 0 !important;
+	}
+	.navbar-expand-custom {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+	.navbar-expand-custom .navbar-nav {
+		flex-direction: row;
+	}
+	.navbar-expand-custom .navbar-nav .nav-link {
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
+	}
+	.navbar-expand-custom .navbar-collapse {
+		display: flex !important;
+	}
+	.navbar-expand-custom .navbar-toggler {
+		display: none;
+	}
+}

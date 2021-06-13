@@ -1,0 +1,89 @@
+.OfferCar .off:hover img {
+	animation-name: zoomin;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	box-shadow: 2rem;
+}
+
+.OfferCar {
+	margin-top: 50px;
+}
+
+.OfferCar .card-text {
+	color: black !important;
+}
+
+@keyframes zoomin {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+
+
+.OfferCar .off {
+	
+	font-family: "Roboto";
+}
+
+
+
+.OfferCar .off h4 {
+	color: crimson;
+	font-size: large;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+	.OfferCar .off h4 {
+		color: crimson;
+		font-size: large;
+	}
+}
+
+.OfferCar .owl-prev,
+.OfferCar .owl-next {
+	position: absolute;
+	top: 40%;
+	background-color: transparent !important;
+	color: rgb(189, 186, 186) !important;
+}
+
+.OfferCar .owl-prev {
+	left: 0px;
+	border-radius: 0 10px 10px 0 !important;
+}
+
+.OfferCar .owl-next {
+	right: 0px;
+	border-radius: 10px 0 0 10px !important;
+}
+
+.OfferCar .owl-prev span,
+.OfferCar .owl-next span {
+	font-size: 50px !important;
+	margin: 0 10px !important;
+	position: relative;
+	top: -5px;
+}
+
+.OfferCar .card-body {
+	text-align: center !important;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+	.owl-nav {
+		display: none;
+	}
+	.owl-theme {
+		padding: 0px !important;
+	}
+}
