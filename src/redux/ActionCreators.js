@@ -1,6 +1,6 @@
 import * as ActionTypes from "./ActionTypes";
 import axios from "axios";
-const baseURL = "/api/";
+const baseURL = "https://madad-iiti.herokuapp.com/api/";
 //const baseURL = "http://localhost:5000";
 
 const fetchDonorRequest = () => ({
